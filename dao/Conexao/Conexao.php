@@ -34,18 +34,18 @@ class Conexao extends PDO{
 
     private static function getPDO() : PDO
     {
-  
+    /*
         $host = 'localhost';
         $database = 'u472708129_pat_itatiba';
         $user = 'u472708129_pat_itatiba';
         $password = 'mwH9/c9:El';
-    /*  
+     */
    
         $host = '127.0.0.1:3306';
         $database = 'bd_pat_itatiba';
         $user = 'root';
         $password = 'senha';
-   */
+  
         return new PDO("mysql:host=$host;dbname=$database", $user, $password);
 
         // Configurando PDO para lançar exceções em caso de erros
