@@ -31,22 +31,24 @@
 
             if (darkModeEnabled) {
                 // Aplica o fundo escuro
+                document.querySelector("html").setAttribute('data-bs-theme', 'dark');
                 document.body.style.backgroundColor = '#333';
                 document.body.style.color = '#FFF';
 
                 // Aplica o fundo escuro também na tabela
-                document.querySelector('.table').classList.add('table-dark');
+                //document.querySelector('.table').classList.add('table-dark');
                 document.getElementById('navbar').classList.add('navbar-dark', 'bg-dark');
 
                 document.getElementById('topo').classList.add('navbar-dark', 'bg-dark');
                 document.getElementById('navTopo').classList.add('navbar-dark', 'bg-dark');
             } else {
                 // Volta ao fundo claro
+                document.querySelector("html").setAttribute('data-bs-theme', 'light');
                 document.body.style.backgroundColor = '#FFF';
                 document.body.style.color = '#000';
 
                 // Remove o fundo escuro da tabela
-                document.querySelector('.table').classList.remove('table-dark');
+                //document.querySelector('.table').classList.remove('table-dark');
                 document.getElementById('navbar').classList.remove('navbar-dark', 'bg-dark')
                 document.getElementById('topo').classList.remove('navbar-dark', 'bg-dark');
                 document.getElementById('navTopo').classList.remove('navbar-dark', 'bg-dark');

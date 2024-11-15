@@ -1,7 +1,7 @@
 <?php foreach($ar_vagas as $vaga) {?>
 
 
-           <!-- Details Modal -->
+<!-- Details Modal -->
 <div class="modal fade" id="detailsModal<?php echo $vaga->codigo;?>" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
@@ -52,15 +52,18 @@
                         <p class="card-text"><?php echo $vaga->oEmpresa->nome;?></p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card card-margin-bottom">
                     <div class="card-header">Forma de contato</div>
                     <div class="card-body">
                         <p class="card-text">Enviar currículo para <?php echo $vaga->oEmpresa->email;?> ou ligar para <?php echo $vaga->oEmpresa->telefone;?></p>
                     </div>
                 </div>
-
-             
-               
+                <div class="card">
+                    <div class="card-header">Endereço</div>
+                    <div class="card-body">
+                        <p class="card-text"><?php echo $vaga->oEmpresa->endereco;?></p>
+                    </div>
+                </div>
 
                 <!-- Adicionando o mapa aqui -->
                 <div id="map<?php echo $vaga->codigo;?>" style="height: 400px; width: 100%; margin-top: 20px;"></div>
@@ -74,9 +77,9 @@
 
 
 
-            <?php } ?>  
+<?php } ?>  
            
-            <script>
+<script>
     // Define as coordenadas do ponto específico (exemplo: São Paulo)
     var lat = -23.550520; // Latitude
     var lon = -46.633308; // Longitude
@@ -97,22 +100,22 @@
     });
 </script>
 
-            <script>
-        let fontSize = 16; // Tamanho inicial da fonte
-        const maxFontSize = 24; // Tamanho máximo permitido
-        const minFontSize = 12; // Tamanho mínimo permitido
+<script>
+    let fontSize = 16; // Tamanho inicial da fonte
+    const maxFontSize = 24; // Tamanho máximo permitido
+    const minFontSize = 12; // Tamanho mínimo permitido
 
-        document.getElementById('increase-font').addEventListener('click', function () {
-            if (fontSize < maxFontSize) {
-                fontSize += 2; // Aumenta a fonte em 2px
-                document.body.style.fontSize = fontSize + 'px';
-            }
-        });
+    document.getElementById('increase-font').addEventListener('click', function () {
+        if (fontSize < maxFontSize) {
+            fontSize += 2; // Aumenta a fonte em 2px
+            document.body.style.fontSize = fontSize + 'px';
+        }
+    });
 
-        document.getElementById('decrease-font').addEventListener('click', function () {
-            if (fontSize > minFontSize) {
-                fontSize -= 2; // Diminui a fonte em 2px
-                document.body.style.fontSize = fontSize + 'px';
-            }
-        });
-    </script>
+    document.getElementById('decrease-font').addEventListener('click', function () {
+        if (fontSize > minFontSize) {
+            fontSize -= 2; // Diminui a fonte em 2px
+            document.body.style.fontSize = fontSize + 'px';
+        }
+    });
+</script>

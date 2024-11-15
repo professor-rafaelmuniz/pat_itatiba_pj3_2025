@@ -23,38 +23,28 @@
 	<body>
         <div class="container header" id="topo">
             <nav id="navTopo" class="container navbar navbar-expand-md">
-                <img src="view/pat.jpg" class="rounded float-start logo" alt="...">
-                <div class="menu-title">
-                <h1 style="font-size:18px;"><span>Posto de Atendimento<br>
-                    ao Trabalhador - Itatiba</h1>
+                <div class="logo-header d-flex">
+                    <img src="view/pat.jpg" class="rounded float-start logo" alt="...">
+                    <div class="menu-title  ms-2">
+                        <span>Posto de Atendimento</span>
+                        <span>ao Trabalhador - Itatiba</span>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse normal-justify" id="main-navigation">
+                <div class="normal-justify navigation-header" id="main-navigation">
                     <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a href="#mainContent" class="sr-only sr-only-focusable">Pular para o conteúdo</a>
-                    </li>
                         <li class="nav-item">
-                            <a class="btn btn-dark btn-header" href="http://rafaelmuniz.com.br/pat_itatiba/index.php" target="_self">Mural de Vagas</a>
+                            <a class="btn btn-secondary btn-header btn-vagas" href="index.php" target="_self">Mural de Vagas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="btn btn-dark btn-header" href="<?php echo $this->getHash("Login=loginPage"); ?>">Para Empresas</a>
+                        <li class="nav-item btn-empresa">
+                            <a class="btn btn-secondary btn-header" href="<?php echo $this->getHash("Login=loginPage"); ?>">Para Empresas</a>
                         </li>
                     </ul>
-                    <div class="menu-acessibilidade">&nbsp;&nbsp;&nbsp;&nbsp;
-                <button id="increase-font" class="btn btn-secondary me-2 btn-sm">A+</button>
-                <button id="decrease-font" class="btn btn-secondary btn-sm">A-</button>
-                <button id="toggle-dark-mode" class="btn btn-secondary btn-sm">Fundo escuro</button>
-            </div>
+                    <div class="menu-acessibilidade">
+                        <button id="increase-font" class="btn btn-outline-secondary btn-sm btn-pad">A+</button>
+                        <button id="decrease-font" class="btn btn-outline-secondary btn-sm btn-pad">A-</button>
+                        <button id="toggle-dark-mode" class="btn btn-outline-secondary btn-sm btn-pad">Fundo escuro</button>
+                    </div>
                 </div>
-                <div class="menu-title">
-                    <span>Prefeitura</span>
-                    <span>de Itatiba</span>
-                </div>
-                <img src="view/ita.jpg" class="rounded float-start logo" alt="Imagem Logo da Preteitura">
             </nav>
             
         </div>
-
-    
-
-  

@@ -67,7 +67,8 @@ body {
 }
 
 .logo {
-    height: 80px;
+    height: 60px;
+    margin: auto;
 }
 
 .btn-header {
@@ -107,3 +108,66 @@ thead > tr > th {
 .card-text-login {
     max-width: 22rem;
 }
+
+.btn-pad {
+    padding: 7px;
+}
+
+@media (max-width: 432px) {
+    .btn-vagas {
+        margin-top: 8px;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+}
+
+@media (max-width: 535px) {
+    .logo-header {
+        margin: auto;
+    }
+
+    .navigation-header {
+        margin: auto;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-empresa {
+        margin-top: 5px;
+    }
+
+    .btn-vagas {
+        margin-top: 8px;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        float: none;
+    }
+
+    .menu-acessibilidade {
+        float: none;
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 993px) {
+    .navbar-nav {
+        float: left !important;
+    }
+
+    .menu-acessibilidade {
+        float: right !important;
+        margin-left: 10px;
+    }
+}
+  
