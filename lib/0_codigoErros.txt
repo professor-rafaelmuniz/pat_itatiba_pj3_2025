@@ -1,4 +1,0 @@
-PROF001 - Erro ao cadastrar uma nova prova. 
-PROVA001 - Erro ao alterar status.
-PQ001 - Erro ao montar associar questão em prova.
-QUE001 - Erro ao cadastrar nova questão.
